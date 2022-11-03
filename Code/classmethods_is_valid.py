@@ -14,10 +14,12 @@ class House:
 
 def main():
     city = "Amsterdam"
-    print(is_valid(city)) # Prints "True"
+    city_valid = House.is_valid(city)
+    print(city_valid) # Prints "True"
     
-    city = "Eindhoven"
-    print(is_valid(city)) # Prints "False"
+    city2 = "Eindhoven"
+    city2_valid = House.is_valid(city)
+    print(city2_valid) # Prints "False"
 
 
 if __name__ == "__main__":
