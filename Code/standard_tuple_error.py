@@ -1,4 +1,4 @@
-# Example standard implementation with dictionaries.
+# Example standard implementation with tuple.
 # Gives an error as tuples are immutable.
 
 

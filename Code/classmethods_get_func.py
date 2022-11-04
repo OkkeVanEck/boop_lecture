@@ -1,9 +1,9 @@
-# Example of getting and setting without decorators.
+# Classmethod get function that creates a new instance based on user input.
 
 
 class House:
 	def __init__(self, location, price):
-		if location not in ["Amsterdam", "Utrecht", "Maastrict"]:
+		if location not in ["Amsterdam", "Utrecht", "Maastricht"]:
 			raise ValueError("Given city is not supported.")
 
 		self.location = location

@@ -1,5 +1,4 @@
-# Example standard implementation with tuples.
-# Gives an error as tuples are immutable.
+# Example standard implementation with dictionary.
 
 
 def get_house():

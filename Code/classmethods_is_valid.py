@@ -1,8 +1,8 @@
-# Example class instance implementation.
+# Example classmethod implementation without an init function.
 
 
 class House:
-	valid_cities = ["Amsterdam", "Utrecht", "Maastrict"]
+	valid_cities = ["Amsterdam", "Utrecht", "Maastricht"]
 	
 	@classmethod
 	def is_valid(cls, city):

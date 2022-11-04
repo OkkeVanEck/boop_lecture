@@ -1,9 +1,11 @@
-# Example of getting and setting without decorators.
+# Example of getting and setting with decorators.
 
 
 class House:
+	valid_cities = ["Amsterdam", "Utrecht", "Maastricht"]
+
 	def __init__(self, location, price):
-		if location not in ["Amsterdam", "Utrecht", "Maastrict"]:
+		if location not in valid_cities:
 			raise ValueError("Given city is not supported.")
 
 		self._location = location
@@ -15,7 +17,7 @@ class House:
 			
 		@location.setter
 		def location(self, location):
-			if location not in ["Amsterdam", "Utrecht", "Maastrict"]:
+			if location not in valid_cities:
 				raise ValueError("Given city is not supported.")
 			return self._location = location
 

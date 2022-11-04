@@ -1,9 +1,9 @@
-# Example class init function where errors are catched and raised.
+# Example class init function with __str__ overloaded.
 
 
 class House:
 	def __init__(self, location, price):
-		if location not in ["Amsterdam", "Utrecht", "Maastrict"]:
+		if location not in ["Amsterdam", "Utrecht", "Maastricht"]:
 			raise ValueError("Given city is not supported.")
 
 		self.location = location

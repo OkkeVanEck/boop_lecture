@@ -1,4 +1,4 @@
-# Example OOP implementation with only location and price.
+# Example OOP implementation.
 
 
 class House:
