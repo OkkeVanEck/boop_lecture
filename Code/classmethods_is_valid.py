@@ -20,7 +20,7 @@ def main():
     print(city_valid)  # Prints "True"
 
     city2 = "Eindhoven"
-    city2_valid = House.is_valid(city)
+    city2_valid = House.is_valid(city2)
     print(city2_valid)  # Prints "False"
 
 

@@ -13,20 +13,20 @@ class House:
         self._location = location
         self.price = price
 
-        @property
-        def location(self):
-            return self._location
+    @property
+    def location(self):
+        return self._location
 
-        @location.setter
-        def location(self, location):
-            if location not in self.valid_cities:
-                raise ValueError("Given city is not supported.")
-            self._location = location
+    @location.setter
+    def location(self, location):
+        if location not in self.valid_cities:
+            raise ValueError("Given city is not supported.")
+        self._location = location
 
 
 def get_house():
     location = input("City: ") # Enter "Amsterdam"
-    price = input("Price: ")
+    price = int(input("Price: "))
     return House(location, price)
 
 

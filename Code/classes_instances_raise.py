@@ -14,7 +14,7 @@ class House:
 
 def get_house():
     location = input("City: ")
-    price = input("Price: ")
+    price = int(input("Price: "))
     return House(location, price)
 
 

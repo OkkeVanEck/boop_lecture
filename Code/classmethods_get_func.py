@@ -14,7 +14,7 @@ class House:
     @classmethod
     def get(cls):
         location = input("City: ")
-        price = input("Price: ")
+        price = int(input("Price: "))
         return House(location, price)
 
 
